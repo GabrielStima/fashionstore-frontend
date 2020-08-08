@@ -1,0 +1,8 @@
+html, body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #707070;
+}
+html, body, ul{
+    margin: 0;
+    padding: 0;
+}
