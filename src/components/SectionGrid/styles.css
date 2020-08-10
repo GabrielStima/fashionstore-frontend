@@ -1,0 +1,67 @@
+.section-effect:hover .section-grid-item-img{
+    transform: scale(1.05);
+}
+
+.section-effect:hover .section-grid-infos p{
+    color: #505050;
+}
+
+.section-effect:hover .section-grid-principal-img{
+    transform: scale(1.03);
+}
+
+.section-effect:hover .section-grid-infos p{
+    color: #505050;
+}
+
+.section-grid-principal{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.section-grid-principal-img{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 442px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.section-grid-infos{
+    margin-top: 7px;
+}
+
+.section-grid-infos p{
+    margin: 0;
+}
+
+.section-grid-infos-title{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.section-grid-infos-action{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.section-grid-item{
+    padding: 0 11px 11px 11px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.section-grid-item-img{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 270px;
+    height: 188px;
+    transition: all .5s;
+}

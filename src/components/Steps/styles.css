@@ -1,0 +1,97 @@
+.step-button-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hide-content {
+  display: none;
+}
+.step-button{
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #707070;
+  margin: 0 40px 40px 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+}
+.step-button:first-child{
+  margin-left: 0;
+}
+.step-button:nth-child(2)::before{
+  content: "";
+  position: absolute;
+  color: #707070;
+  left: -170%;
+  width: 51px;
+  height: 0;
+  border: 1px solid;
+}
+.step-button:nth-child(2)::after{
+  content: "";
+  position: absolute;
+  color: #707070;
+  right: -170%;
+  width: 51px;
+  height: 0;
+  border: 1px solid;
+}
+.step-button:last-child{
+  margin-right: 0;
+}
+.button-color-select {
+  color: white;
+  background-color: #292929;
+}
+.step-content-container{
+  width: 100%;
+  padding: 20px 51px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  margin: 30px 0;
+}
+.step-content-container h3{
+  font-size: 18px;
+  font-weight: 300;
+}
+.step-content-container p{
+  font-size: 15px;
+  font-weight: 300;
+}
+.bag-title{
+  color: #101010;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.step-content-container-buttons{
+  display: flex;
+  justify-content: center;
+}
+.step-content-container-button{
+  font-size: 15px;
+  font-weight: 300;
+  box-sizing: border-box;
+  padding: 21px 40px;
+  outline: none;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background-color: #afafaf;
+  border-radius: 5px;
+}
+.step-content-container-button:hover{
+  background-color: #292929;
+  border: none;
+  color: #ffffff;
+}
+.step-content-product{
+  min-height: 146px;
+}

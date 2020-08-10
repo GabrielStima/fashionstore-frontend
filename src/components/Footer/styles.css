@@ -1,0 +1,74 @@
+.footer-help-info-container{
+    width: 100%;
+    min-height: 116px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 70px;
+    box-sizing: border-box;
+}
+
+.footer-help-info-item{
+    width: 182px;
+    height: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer-help-info-item p{
+    margin: .5rem 0 0 0;
+    text-align: center;
+}
+
+.footer-store-info{
+    width: 100%;
+    min-height: 302px;
+    padding: 0 198px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.footer-store-info-item{
+    margin-top: 35px;
+}
+.footer-store-info-item h3{
+    font-size: 20px;
+    font-weight: normal;
+}
+.footer-store-info-item ul{
+    list-style: none;
+}
+.footer-store-info-item ul li, .footer-store-info-item p{
+    font-size: 14px;
+}
+.footer-store-info-item p{
+    margin: 0;
+}
+p.footer-store-info-item-faq{
+    margin-bottom: 1rem;
+}
+.footer-special-links{
+    background-color: #ffffff;
+    width: 100%;
+    height: 70px;
+    padding: 0 42px;
+}
+.footer-special-links ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.footer-special-links ul li{
+    margin-right: 1rem;
+    font-size: 12px;
+}
+.footer-links{
+    cursor: pointer;
+}
+.footer-links:hover{
+    color:#303030;
+}

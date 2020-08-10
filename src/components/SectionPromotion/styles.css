@@ -1,0 +1,31 @@
+.section-container{
+    width: 100%;
+    height: 544px;
+    padding: 0 375px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.section-container-title{
+    margin: 43px 0 1rem;
+    display: flex;
+    align-items: center;
+}
+.section-title{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+.section-line{
+    width: 459px;
+}
+.section-grid{
+    height: 497px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+
