@@ -1,0 +1,50 @@
+.grid-list-item{
+    width: 100%;
+    height: 430px;
+    box-sizing: border-box;
+}
+
+.grid-list-item-img{
+    width: 100%;
+    height: 364px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all .3s;
+}
+
+.grid-list-item-text p{
+    margin: 0;
+}
+
+.grid-list-item-title{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.grid-list-item-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.grid-list-item-action{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.item-effect:hover .grid-list-item-img{
+    transform: scale(1.02);
+}
+
+.item-effect:hover .grid-list-item-text p{
+    color: #505050;
+}
+@media (max-width: 768px) {
+    .grid-list-item-action{
+        font-size: 16px;
+    }
+    
+    .grid-list-item-action{
+        font-size: 12px;
+    }
+}

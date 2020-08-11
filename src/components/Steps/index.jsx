@@ -27,60 +27,42 @@ function Step({ arraySteps = [], arrayContent = [] }) {
     }
   }, [currentStep, previousStep]);
 
-  const callbackNextSteps = (direction = false) => {
-    if (direction) {
-      setCurrentStep(currentStep + 1);
-    } else {
-      setCurrentStep(currentStep - 1);
-    }
-  };
-
-  const callbackDisableButton = (id, value) => {
-    document.querySelector(`#${id}`).disabled = value;
-  };
+  const StepsButtons = () => (
+    <React.Fragment>
+      {arraySteps.map((element, index) => (
+        <div
+          className={`step-button ${
+            currentStep === index ? "button-color-select" : ""
+          }`}
+          key={index}
+        >
+          {element}
+        </div>
+      ))}
+    </React.Fragment>
+  );
 
   return (
     <div>
       <div className="step-button-container">
-        {arraySteps.map((element, index) => (
-          <div
-            className={`step-button ${
-              currentStep === index ? "button-color-select" : ""
-            }`}
-            key={index}
-          >
-            {element}
-          </div>
-        ))}
+        <StepsButtons />
       </div>
 
       <div className="step-content-container">
-        {arrayContent.length === 0 ? (
-          <React.Fragment>
-            {arraySteps.map((element, index) => (
-              <div key={index} id={`div${index}`} className="hide-content">
-                <div className="step-content-product">
-                  <h2 className="bag-title">Seu carrinho está vazio</h2>
-                </div>
+        <React.Fragment>
+          {arrayContent.map((element, index) => (
+            <div
+              key={index}
+              id={`div${index}`}
+              className="step-content-product hide-content"
+            >
+              <div className="step-content-product">
+                <h2 className="bag-title">Seu carrinho</h2>
+                {element}
               </div>
-            ))}
-          </React.Fragment>
-        ) : (
-          <React.Fragment>
-            {arrayContent.map((element, index) => (
-              <div
-                key={index}
-                id={`div${index}`}
-                className="step-content-product hide-content"
-              >
-                <div className="step-content-product">
-                  <h2 className="bag-title">Seu carrinho</h2>
-                  {element()}
-                </div>
-              </div>
-            ))}
-          </React.Fragment>
-        )}
+            </div>
+          ))}
+        </React.Fragment>
 
         <div className="step-content-container-buttons">
           <Link to="/">

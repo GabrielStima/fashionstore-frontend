@@ -12,6 +12,8 @@ function Header({ showAlertRefresh }) {
     const refreshNumber = window.sessionStorage.getItem("sessionProducts");
     if (refreshNumber) {
       setNumberBag(refreshNumber.split(",").length);
+    } else {
+      setNumberBag(0);
     }
   }, [showAlertRefresh]);
 
@@ -42,7 +44,10 @@ function Header({ showAlertRefresh }) {
         <span className="header-container-icons-separate" />
         <Link to="/bag">
           <Badge badgeContent={numberBag} color="primary">
-            <FiShoppingBag size="20px" className="header-container-icon" />
+            <FiShoppingBag
+              size="20px"
+              className="header-container-icon bag-icon"
+            />
           </Badge>
         </Link>
       </div>

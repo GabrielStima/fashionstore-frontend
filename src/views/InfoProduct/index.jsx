@@ -6,6 +6,10 @@ function InfoProduct({ props, callbackAlert }) {
   const [item, setItem] = useState("");
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const request = async () => {
       const result = await productService.getProductById(props.match.params.id);
       setItem(result.data);
@@ -37,7 +41,7 @@ function InfoProduct({ props, callbackAlert }) {
           <h3 className="info-product-title">{item.title}</h3>
           <p className="info-product-value">{item.value}</p>
           <ul className="info-product-sizes">
-            {item && (
+            {item.size && (
               <React.Fragment>
                 {item.size.map((el, index) => (
                   <li key={index}>{el}</li>

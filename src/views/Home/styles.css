@@ -5,3 +5,19 @@
     background-size: cover;
     background-position: center;
 }
+
+@media (max-width: 1440px) {
+    .home-banner{
+        height: 500px;
+    }
+}
+@media (max-width: 1024px) {
+    .home-banner{
+        height: 400px;
+    }
+}
+@media (max-width: 768px) {
+    .home-banner{
+        height: 300px;
+    }
+}

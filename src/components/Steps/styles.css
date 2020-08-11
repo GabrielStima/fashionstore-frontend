@@ -95,3 +95,15 @@
 .step-content-product{
   min-height: 146px;
 }
+@media (max-width: 1024px) {
+  .step-content-container{
+    width: auto;
+    margin: 2.2rem 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .step-content-container{
+    margin: 2.2rem 1rem;
+    padding: 20px 10px
+  }
+}

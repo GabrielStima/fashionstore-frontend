@@ -72,3 +72,8 @@ p.footer-store-info-item-faq{
 .footer-links:hover{
     color:#303030;
 }
+@media (max-width: 1440px){
+    .footer-store-info{
+        padding: 0;
+    }
+}

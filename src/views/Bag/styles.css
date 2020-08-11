@@ -7,7 +7,7 @@
     align-items: center;
 }
 .bag-steps-container{
-    width: 1272px;
+    width: 79rem;
     min-height: 595px;
 }
 .item-bag-container{
@@ -61,4 +61,9 @@ p.bag-total{
     color: #101010;
     font-size: 20px;
     margin: 1rem 25px;
+}
+@media (max-width: 1024px) {
+    .bag-steps-container{
+        width: 100%;
+  }
 }

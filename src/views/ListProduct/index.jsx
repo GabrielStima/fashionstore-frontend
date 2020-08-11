@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
+import ListItem from "../../components/ListItem";
 import Pagination from "@material-ui/lab/Pagination";
-import { Link } from "react-router-dom";
 import bannerService from "../../services/bannerService";
 import productService from "../../services/productService";
 
@@ -28,30 +28,13 @@ function ListProduct({ props }) {
     request();
   }, [props]);
 
-  const ListItem = ({ item }) => (
-    <div className="grid-list-item item-effect">
-      <Link to={`/item/${item._id}`} className="grid-list-item-link">
-        <div
-          className="grid-list-item-img"
-          style={{ backgroundImage: `url(${item.img})` }}
-        />
-        <div className="grid-list-item-text">
-          <p className="grid-list-item-title">
-            {item.title} POR {item.value}
-          </p>
-          <p className="grid-list-item-action">CONFERIR</p>
-        </div>
-      </Link>
-    </div>
-  );
-
   return (
     <div>
       <div
         className="secondary-banner"
         style={{ backgroundImage: `url(${banner})` }}
       />
-      <div className="grid-list-cotainer">
+      <div className="grid-list-container">
         <p>XXX Resultados</p>
         <div className="grid-list">
           {listProduct.map((el, index) => (
