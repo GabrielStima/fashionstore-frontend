@@ -15,14 +15,22 @@ Para ver o projeto inteiro clique aqui.
 ### UI
 Aqui está alguns frames que criei:
 
+## Home
+
 ![](./src/assets/UX/Home.png)
+
+## Detalhar Item
 
 ![](./src/assets/UX/Detalhar-item.png.png)
 
 ### UX
 Aqui está alguns frames que criei:
 
+## Home
+
 ![](./src/assets/UX/Home-1.png)
+
+## Detalhar Item
 
 ![](./src/assets/UX/Detalhar-item-1.png.png)
 
