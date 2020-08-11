@@ -16,12 +16,14 @@ Para ver o projeto inteiro clique aqui.
 Aqui está alguns frames que criei:
 
 ![](./src/assets/UX/Home.png)
+
 ![](./src/assets/UX/Detalhar-item.png.png)
 
 ### UX
 Aqui está alguns frames que criei:
 
 ![](./src/assets/UX/Home-1.png)
+
 ![](./src/assets/UX/Detalhar-item-1.png.png)
 
 ## Aplicação
