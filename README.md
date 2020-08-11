@@ -21,7 +21,7 @@ Aqui está alguns frames que criei:
 
 ## Detalhar Item
 
-![](./src/assets/UX/Detalhar-item.png.png)
+![](./src/assets/UX/Detalhar-item.png)
 
 ### UX
 Aqui está alguns frames que criei:
@@ -32,7 +32,7 @@ Aqui está alguns frames que criei:
 
 ## Detalhar Item
 
-![](./src/assets/UX/Detalhar-item-1.png.png)
+![](./src/assets/UX/Detalhar-item-1.png)
 
 ## Aplicação
 
